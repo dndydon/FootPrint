@@ -74,28 +74,28 @@
             </objects>
             <point key="canvasLocation" x="580" y="30.295566502463057"/>
         </scene>
-        <!--Item-->
+        <!--EcoPrint FootPrint-->
         <scene sceneID="xtM-YG-xqy">
             <objects>
-                <viewController id="yRj-1t-UTI" customClass="FootPrintViewController" customModule="Footprint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EcoPrint FootPrint" id="yRj-1t-UTI" customClass="FootPrintViewController" customModule="Footprint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rW8-Sy-PWg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name, UPC" borderStyle="roundedRect" placeholder="Product Name and UPC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mz-fm-LO1">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name, UPC" borderStyle="roundedRect" placeholder="Product Name and UPC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mz-fm-LO1">
                                 <rect key="frame" x="16" y="119" width="343" height="31"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="UPC Code Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-oR-5hv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UPC Code Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-oR-5hv">
                                 <rect key="frame" x="108" y="158" width="158" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-ud-JNz" customClass="FootPrintView" customModule="Footprint" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-ud-JNz" customClass="FootPrintView" customModule="Footprint" customModuleProvider="target">
                                 <rect key="frame" x="16" y="193" width="343" height="346"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,13 +112,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RIE-So-9dN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wt5-rv-Eks"/>
+                    <tabBarItem key="tabBarItem" title="EcoPrint" id="Wt5-rv-Eks"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTW-4z-nQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2225" y="-314"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="NfT-1P-FP6">
             <objects>
                 <tableViewController id="NKV-Xw-g8K" sceneMemberID="viewController">
@@ -141,7 +141,7 @@
                             <outlet property="delegate" destination="NKV-Xw-g8K" id="or6-vl-AtU"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="fh7-ss-mwg"/>
+                    <tabBarItem key="tabBarItem" title="History" id="fh7-ss-mwg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxX-d6-GfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,9 +158,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="yRj-1t-UTI" kind="relationship" relationship="viewControllers" id="Myw-fh-2L8"/>
                         <segue destination="0Pk-bb-eeN" kind="relationship" relationship="viewControllers" id="PxW-iB-P3n"/>
                         <segue destination="NKV-Xw-g8K" kind="relationship" relationship="viewControllers" id="mer-in-WVH"/>
-                        <segue destination="yRj-1t-UTI" kind="relationship" relationship="viewControllers" id="Myw-fh-2L8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k42-X2-WxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
