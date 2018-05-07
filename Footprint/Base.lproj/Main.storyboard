@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="30.295566502463057"/>
+            <point key="canvasLocation" x="720" y="32"/>
         </scene>
         <!--EcoPrint FootPrint-->
         <scene sceneID="xtM-YG-xqy">
@@ -82,33 +82,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name, UPC" borderStyle="roundedRect" placeholder="Product Name and UPC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mz-fm-LO1">
-                                <rect key="frame" x="16" y="119" width="343" height="31"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UPC Code Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-oR-5hv">
-                                <rect key="frame" x="108" y="158" width="158" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC Code Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-oR-5hv">
+                                <rect key="frame" x="16" y="158" width="343" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-ud-JNz" customClass="FootPrintView" customModule="Footprint" customModuleProvider="target">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-ud-JNz" customClass="FootPrintView" customModule="Footprint" customModuleProvider="target">
                                 <rect key="frame" x="16" y="193" width="343" height="346"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NVg-ud-JNz" secondAttribute="height" multiplier="343:346" id="sCA-4l-cxL"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sustainabilityValue">
                                         <real key="value" value="0.40000000000000002"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Product Name, UPC" borderStyle="roundedRect" placeholder="Product Name and UPC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mz-fm-LO1">
+                                <rect key="frame" x="16" y="119" width="343" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5mz-fm-LO1" firstAttribute="top" secondItem="RIE-So-9dN" secondAttribute="top" constant="31" id="gmf-AU-PdQ"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="trailing" secondItem="rW8-Sy-PWg" secondAttribute="trailingMargin" id="A0i-Qb-XMT"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="trailing" secondItem="UdX-oR-5hv" secondAttribute="trailing" id="CZm-Se-arM"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="leading" secondItem="5mz-fm-LO1" secondAttribute="leading" id="EWO-km-2jk"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="leading" secondItem="UdX-oR-5hv" secondAttribute="leading" id="F3n-VT-cbi"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="trailing" secondItem="5mz-fm-LO1" secondAttribute="trailing" id="I0D-5e-Cbg"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="leading" secondItem="rW8-Sy-PWg" secondAttribute="leadingMargin" id="Nff-V7-il6"/>
+                            <constraint firstItem="RIE-So-9dN" firstAttribute="bottom" secondItem="NVg-ud-JNz" secondAttribute="bottom" constant="190" id="Rge-yG-29r"/>
+                            <constraint firstItem="NVg-ud-JNz" firstAttribute="top" secondItem="UdX-oR-5hv" secondAttribute="bottom" constant="8" symbolic="YES" id="XgL-TD-iek"/>
+                            <constraint firstItem="UdX-oR-5hv" firstAttribute="top" secondItem="5mz-fm-LO1" secondAttribute="bottom" constant="8" symbolic="YES" id="nWX-Mw-pt7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RIE-So-9dN"/>
                     </view>
@@ -116,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTW-4z-nQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="-314"/>
+            <point key="canvasLocation" x="2289" y="-394"/>
         </scene>
         <!--History-->
         <scene sceneID="NfT-1P-FP6">
@@ -127,11 +136,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="c0b-os-CN8">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" id="c0b-os-CN8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c0b-os-CN8" id="Fjl-I8-t1j">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -145,7 +154,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxX-d6-GfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="32"/>
+            <point key="canvasLocation" x="3041" y="32"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NYi-JC-3XT">
@@ -165,7 +174,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k42-X2-WxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="32"/>
+            <point key="canvasLocation" x="1506" y="32"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ee8-7X-P2b">
@@ -183,7 +192,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1L-mR-BEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-119" y="32"/>
+            <point key="canvasLocation" x="-71" y="32"/>
         </scene>
         <!--FootPrint Metrics-->
         <scene sceneID="psW-kc-kSc">
@@ -330,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1iJ-dz-6Nx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="415"/>
+            <point key="canvasLocation" x="2289" y="455"/>
         </scene>
     </scenes>
 </document>
