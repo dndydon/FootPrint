@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8D64B8E209D8CFB0086E56F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D64B8D209D8CFB0086E56F /* AppDelegate.swift */; };
+		F8D64B90209D8CFB0086E56F /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D64B8F209D8CFB0086E56F /* QRCodeScannerViewController.swift */; };
+		F8D64B93209D8CFB0086E56F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D64B91209D8CFB0086E56F /* Main.storyboard */; };
+		F8D64B96209D8CFB0086E56F /* Footprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8D64B94209D8CFB0086E56F /* Footprint.xcdatamodeld */; };
+		F8D64B98209D8CFE0086E56F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D64B97209D8CFE0086E56F /* Assets.xcassets */; };
+		F8D64B9B209D8CFE0086E56F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D64B99209D8CFE0086E56F /* LaunchScreen.storyboard */; };
+		F8D64BA6209D8CFF0086E56F /* FootprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D64BA5209D8CFF0086E56F /* FootprintTests.swift */; };
+		F8F17CFB209E964400F001AA /* FootPrintStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17CFA209E964400F001AA /* FootPrintStyleKit.swift */; };
+		F8F17CFD209E96F200F001AA /* FootPrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17CFC209E96F200F001AA /* FootPrintView.swift */; };
+		F8F17CFF209F781F00F001AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17CFE209F781E00F001AA /* DetailViewController.swift */; };
+		F8F17D01209F783000F001AA /* StyleKit_Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17D00209F783000F001AA /* StyleKit_Gauge.swift */; };
+		F8F17D03209F7A3900F001AA /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17D02209F7A3900F001AA /* BarcodeScannerView.swift */; };
+		F8F17D07209F7B2C00F001AA /* FootPrintGuageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17D06209F7B2C00F001AA /* FootPrintGuageView.swift */; };
+		F8F17D0B209F818C00F001AA /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17D0A209F818C00F001AA /* DateHelper.swift */; };
+		F8F17D0D209F8E2800F001AA /* FootPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F17D0C209F8E2800F001AA /* FootPrintViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D64BA2209D8CFF0086E56F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D64B82209D8CFB0086E56F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D64B89209D8CFB0086E56F;
+			remoteInfo = Footprint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8D64B8A209D8CFB0086E56F /* Footprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D64B8D209D8CFB0086E56F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D64B8F209D8CFB0086E56F /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		F8D64B92209D8CFB0086E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D64B95209D8CFB0086E56F /* Footprint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Footprint.xcdatamodel; sourceTree = "<group>"; };
+		F8D64B97209D8CFE0086E56F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D64B9A209D8CFE0086E56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D64B9C209D8CFF0086E56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D64BA1209D8CFF0086E56F /* FootprintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootprintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D64BA5209D8CFF0086E56F /* FootprintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintTests.swift; sourceTree = "<group>"; };
+		F8D64BA7209D8CFF0086E56F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F17CFA209E964400F001AA /* FootPrintStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FootPrintStyleKit.swift; path = Art/FootPrintStyleKit.swift; sourceTree = SOURCE_ROOT; };
+		F8F17CFC209E96F200F001AA /* FootPrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootPrintView.swift; sourceTree = "<group>"; };
+		F8F17CFE209F781E00F001AA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F8F17D00209F783000F001AA /* StyleKit_Gauge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit_Gauge.swift; sourceTree = "<group>"; };
+		F8F17D02209F7A3900F001AA /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		F8F17D06209F7B2C00F001AA /* FootPrintGuageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootPrintGuageView.swift; sourceTree = "<group>"; };
+		F8F17D0A209F818C00F001AA /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		F8F17D0C209F8E2800F001AA /* FootPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootPrintViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D64B87209D8CFB0086E56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D64B9E209D8CFF0086E56F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8D64B81209D8CFB0086E56F = {
+			isa = PBXGroup;
+			children = (
+				F8D64B8C209D8CFB0086E56F /* Footprint */,
+				F8D64BA4209D8CFF0086E56F /* FootprintTests */,
+				F8D64B8B209D8CFB0086E56F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D64B8B209D8CFB0086E56F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D64B8A209D8CFB0086E56F /* Footprint.app */,
+				F8D64BA1209D8CFF0086E56F /* FootprintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D64B8C209D8CFB0086E56F /* Footprint */ = {
+			isa = PBXGroup;
+			children = (
+				F8D64B8D209D8CFB0086E56F /* AppDelegate.swift */,
+				F8D64B8F209D8CFB0086E56F /* QRCodeScannerViewController.swift */,
+				F8F17D02209F7A3900F001AA /* BarcodeScannerView.swift */,
+				F8F17D0C209F8E2800F001AA /* FootPrintViewController.swift */,
+				F8F17CFC209E96F200F001AA /* FootPrintView.swift */,
+				F8F17D0E209F8EAB00F001AA /* Guage */,
+				F8F17CFA209E964400F001AA /* FootPrintStyleKit.swift */,
+				F8F17D0A209F818C00F001AA /* DateHelper.swift */,
+				F8D64B91209D8CFB0086E56F /* Main.storyboard */,
+				F8D64B99209D8CFE0086E56F /* LaunchScreen.storyboard */,
+				F8D64B97209D8CFE0086E56F /* Assets.xcassets */,
+				F8D64B9C209D8CFF0086E56F /* Info.plist */,
+				F8D64B94209D8CFB0086E56F /* Footprint.xcdatamodeld */,
+			);
+			path = Footprint;
+			sourceTree = "<group>";
+		};
+		F8D64BA4209D8CFF0086E56F /* FootprintTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D64BA5209D8CFF0086E56F /* FootprintTests.swift */,
+				F8D64BA7209D8CFF0086E56F /* Info.plist */,
+			);
+			path = FootprintTests;
+			sourceTree = "<group>";
+		};
+		F8F17D0E209F8EAB00F001AA /* Guage */ = {
+			isa = PBXGroup;
+			children = (
+				F8F17CFE209F781E00F001AA /* DetailViewController.swift */,
+				F8F17D06209F7B2C00F001AA /* FootPrintGuageView.swift */,
+				F8F17D00209F783000F001AA /* StyleKit_Gauge.swift */,
+			);
+			path = Guage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D64B89209D8CFB0086E56F /* Footprint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D64BAA209D8CFF0086E56F /* Build configuration list for PBXNativeTarget "Footprint" */;
+			buildPhases = (
+				F8D64B86209D8CFB0086E56F /* Sources */,
+				F8D64B87209D8CFB0086E56F /* Frameworks */,
+				F8D64B88209D8CFB0086E56F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Footprint;
+			productName = Footprint;
+			productReference = F8D64B8A209D8CFB0086E56F /* Footprint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D64BA0209D8CFF0086E56F /* FootprintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D64BAD209D8CFF0086E56F /* Build configuration list for PBXNativeTarget "FootprintTests" */;
+			buildPhases = (
+				F8D64B9D209D8CFF0086E56F /* Sources */,
+				F8D64B9E209D8CFF0086E56F /* Frameworks */,
+				F8D64B9F209D8CFF0086E56F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D64BA3209D8CFF0086E56F /* PBXTargetDependency */,
+			);
+			name = FootprintTests;
+			productName = FootprintTests;
+			productReference = F8D64BA1209D8CFF0086E56F /* FootprintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D64B82209D8CFB0086E56F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Don Sleeter";
+				TargetAttributes = {
+					F8D64B89209D8CFB0086E56F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F8D64BA0209D8CFF0086E56F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F8D64B89209D8CFB0086E56F;
+					};
+				};
+			};
+			buildConfigurationList = F8D64B85209D8CFB0086E56F /* Build configuration list for PBXProject "Footprint" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D64B81209D8CFB0086E56F;
+			productRefGroup = F8D64B8B209D8CFB0086E56F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D64B89209D8CFB0086E56F /* Footprint */,
+				F8D64BA0209D8CFF0086E56F /* FootprintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D64B88209D8CFB0086E56F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D64B9B209D8CFE0086E56F /* LaunchScreen.storyboard in Resources */,
+				F8D64B98209D8CFE0086E56F /* Assets.xcassets in Resources */,
+				F8D64B93209D8CFB0086E56F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D64B9F209D8CFF0086E56F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D64B86209D8CFB0086E56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F17D03209F7A3900F001AA /* BarcodeScannerView.swift in Sources */,
+				F8F17D0D209F8E2800F001AA /* FootPrintViewController.swift in Sources */,
+				F8F17CFD209E96F200F001AA /* FootPrintView.swift in Sources */,
+				F8F17CFB209E964400F001AA /* FootPrintStyleKit.swift in Sources */,
+				F8F17D07209F7B2C00F001AA /* FootPrintGuageView.swift in Sources */,
+				F8D64B96209D8CFB0086E56F /* Footprint.xcdatamodeld in Sources */,
+				F8F17D0B209F818C00F001AA /* DateHelper.swift in Sources */,
+				F8F17D01209F783000F001AA /* StyleKit_Gauge.swift in Sources */,
+				F8F17CFF209F781F00F001AA /* DetailViewController.swift in Sources */,
+				F8D64B90209D8CFB0086E56F /* QRCodeScannerViewController.swift in Sources */,
+				F8D64B8E209D8CFB0086E56F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D64B9D209D8CFF0086E56F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D64BA6209D8CFF0086E56F /* FootprintTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D64BA3209D8CFF0086E56F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D64B89209D8CFB0086E56F /* Footprint */;
+			targetProxy = F8D64BA2209D8CFF0086E56F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D64B91209D8CFB0086E56F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D64B92209D8CFB0086E56F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D64B99209D8CFE0086E56F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D64B9A209D8CFE0086E56F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D64BA8209D8CFF0086E56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8D64BA9209D8CFF0086E56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D64BAB209D8CFF0086E56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = Footprint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.Footprint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F8D64BAC209D8CFF0086E56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = Footprint/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.Footprint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F8D64BAE209D8CFF0086E56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = FootprintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.FootprintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Footprint.app/Footprint";
+			};
+			name = Debug;
+		};
+		F8D64BAF209D8CFF0086E56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = FootprintTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.FootprintTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Footprint.app/Footprint";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D64B85209D8CFB0086E56F /* Build configuration list for PBXProject "Footprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D64BA8209D8CFF0086E56F /* Debug */,
+				F8D64BA9209D8CFF0086E56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D64BAA209D8CFF0086E56F /* Build configuration list for PBXNativeTarget "Footprint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D64BAB209D8CFF0086E56F /* Debug */,
+				F8D64BAC209D8CFF0086E56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D64BAD209D8CFF0086E56F /* Build configuration list for PBXNativeTarget "FootprintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D64BAE209D8CFF0086E56F /* Debug */,
+				F8D64BAF209D8CFF0086E56F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8D64B94209D8CFB0086E56F /* Footprint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8D64B95209D8CFB0086E56F /* Footprint.xcdatamodel */,
+			);
+			currentVersion = F8D64B95209D8CFB0086E56F /* Footprint.xcdatamodel */;
+			path = Footprint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8D64B82209D8CFB0086E56F /* Project object */;
+}
